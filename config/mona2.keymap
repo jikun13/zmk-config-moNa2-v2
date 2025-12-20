@@ -34,6 +34,11 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
+
+        mission_control {
+            bindings = <&kp LC(UP_ARROW)>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
