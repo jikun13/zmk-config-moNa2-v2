@@ -82,12 +82,6 @@
 
             tap-ms = <20>;
         };
-
-        zoom_in_out: zoom_in_out {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LG(MINUS)>, <&kp LG(EQUAL)>;
-        };
     };
 
     keymap {
@@ -150,13 +144,13 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans    &kp LG(W)  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &mkp MB4  &mkp MB1   &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                    &trans    &kp LG(W)  &kp LG(LS(R))  &trans    &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &mkp MB4  &mkp MB1   &mkp MB3       &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans         &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                        &trans
             >;
 
-            sensor-bindings = <&zoom_in_out>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         SCROLL {
