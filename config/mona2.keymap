@@ -89,10 +89,10 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W         &kp E     &kp R         &kp T                                            &kp Y            &kp U  &kp I        &kp O    &kp P
-&mt LCTRL A           &kp S         &kp D     &kp F         &kp G                         &kp LC(BACKSLASH)  &kp H            &kp J  &kp K        &kp L    &lt 5 MINUS
-&mt LEFT_SHIFT Z      &kp X         &kp C     &kp V         &kp B          &kp F14        &kp F15            &kp N            &kp M  &lt 3 COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&mt LEFT_SHIFT LANG2  &kp LEFT_ALT  &kp LWIN  &kp LEFT_GUI  &mt LCTRL TAB  &lt 2 SPACE    &lt 3 ENTER        &lt 1 BACKSPACE                               &mt RIGHT_SHIFT LANG1
+&kp Q                 &kp W         &kp E     &kp R         &kp T                                                  &kp Y            &kp U  &kp I        &kp O    &kp P
+&mt LCTRL A           &kp S         &kp D     &kp F         &kp G                               &kp C_VOLUME_UP    &kp H            &kp J  &kp K        &kp L    &lt 5 MINUS
+&mt LEFT_SHIFT Z      &kp X         &kp C     &kp V         &kp B          &kp LC(BACKSLASH)    &kp C_VOLUME_DOWN  &kp N            &kp M  &lt 3 COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT LANG2  &kp LEFT_ALT  &kp LWIN  &kp LEFT_GUI  &mt LCTRL TAB  &lt 2 SPACE          &lt 3 ENTER        &lt 1 BACKSPACE                               &mt RIGHT_SHIFT LANG1
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -123,7 +123,7 @@
         layer_3 {
             bindings = <
 &kp ESCAPE     &kp LS(LC(TAB))     &kp LC(TAB)          &kp LS(LG(NUMBER_4))  &kp LC(LA(LEFT_BRACKET))                                   &trans  &kp LG(W)    &kp LS(LC(TAB))  &kp LC(TAB)          &trans
-&kp LC(LG(E))  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans                &kp LA(LC(RIGHT_BRACKET))                          &trans  &trans  &to_english  &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &trans
+&kp LC(LG(E))  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &to_english           &kp LA(LC(RIGHT_BRACKET))                          &trans  &trans  &to_english  &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &trans
 &trans         &trans              &trans               &trans                &trans                     &trans                  &trans  &trans  &trans       &trans           &trans               &trans
 &trans         &trans              &trans               &trans                &kp LC(LG(H))              &kp LG(SINGLE_QUOTE)    &trans  &trans                                                     &trans
             >;
