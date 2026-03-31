@@ -52,7 +52,7 @@
         to_english: to_english {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(L) &kp LC(SEMICOLON)>;
+            bindings = <&kp F10>;
             label = "TO_ENGLISH";
         };
     };
