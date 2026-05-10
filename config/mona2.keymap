@@ -146,7 +146,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans     &kp LG(W)  &kp LG(LS(R))  &trans    &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &mkp MB4   &mkp MB1   &mkp MB3       &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LG(T)  &trans     &trans         &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RG(T)  &trans     &trans         &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                         &trans
             >;
 
