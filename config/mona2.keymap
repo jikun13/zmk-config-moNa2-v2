@@ -102,7 +102,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &trans        &trans        &trans        &trans        &trans                  &trans  &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT     &kp COLON
-&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans        &trans        &kp SEMICOLON
+&trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans        &kp RG(C)     &kp RG(V)     &trans        &kp SEMICOLON
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans                                                  &trans
             >;
 
@@ -112,8 +112,8 @@
         layer_2 {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT                       &kp CARET          &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans           &trans       &trans     &kp GRAVE   &trans                 &kp GRAVE  &kp SINGLE_QUOTE   &kp EQUAL      &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans           &trans       &trans     &kp TILDE   &trans       &trans    &kp TILDE  &kp DOUBLE_QUOTES  &kp PLUS       &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans           &trans       &trans     &trans      &trans                 &kp GRAVE  &kp SINGLE_QUOTE   &kp EQUAL      &kp BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans           &trans       &trans     &trans      &trans       &trans    &kp TILDE  &kp DOUBLE_QUOTES  &kp PLUS       &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE
 &trans           &trans       &trans     &trans      &trans       &trans    &trans     &trans                                                                 &to_english
             >;
 
@@ -122,10 +122,10 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE     &kp LS(LC(TAB))     &kp LC(TAB)          &kp LS(LG(NUMBER_4))  &kp LC(LA(LEFT_BRACKET))                                   &trans  &kp LG(W)    &kp LS(LC(TAB))  &kp LC(TAB)          &trans
-&kp LC(LG(E))  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &to_english           &kp LA(LC(RIGHT_BRACKET))                          &trans  &trans  &to_english  &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &trans
-&trans         &trans              &trans               &trans                &trans                     &trans                  &trans  &trans  &trans       &trans           &trans               &trans
-&trans         &trans              &trans               &trans                &kp LC(LG(H))              &kp LG(SINGLE_QUOTE)    &trans  &trans                                                     &trans
+&kp ESCAPE     &trans  &trans  &kp LS(LG(NUMBER_4))  &kp LC(LA(LEFT_BRACKET))                                   &trans  &kp LG(W)  &kp LS(LC(TAB))  &kp LC(TAB)          &trans
+&kp LC(LG(E))  &trans  &trans  &to_english           &kp LA(LC(RIGHT_BRACKET))                          &trans  &trans  &trans     &kp LC(LEFT)     &kp LC(RIGHT_ARROW)  &trans
+&trans         &trans  &trans  &trans                &trans                     &trans                  &trans  &trans  &trans     &trans           &trans               &trans
+&trans         &trans  &trans  &trans                &kp LC(LG(H))              &kp LG(SINGLE_QUOTE)    &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
